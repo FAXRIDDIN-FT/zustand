@@ -26,7 +26,7 @@ const Login = () => {
       setToken(data.accessToken);
       navigate("/");
     } catch (err) {
-      setError("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
+      setError("Xatolik");
     }
   };
 
