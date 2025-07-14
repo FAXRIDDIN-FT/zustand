@@ -1,7 +1,8 @@
 import { Navigate, Outlet } from 'react-router-dom'
+import { useStore } from '../zustand'
 
 const Auth = () => {
-    const token = null
+    const {token} = useStore()
   return token ? <Outlet/> : <Navigate replace to="/login"/>
   
 }
